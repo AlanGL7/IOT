@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+        .footer {
+            background-color: #dcdcdc;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .control-circle {
+            width: 500px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .control-circle img {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            cursor: pointer;
+        }
+        
+        .up { top: 15%; left: 50%; transform: translateX(-50%);}
+        .left { top: 50%; left: 15%; transform: translateY(-50%); }
+        .stop { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .right { top: 50%; right: 15%; transform: translateY(-50%); }
+        .down { bottom: 15%; left: 50%; transform: translateX(-50%); }
+        .robot-icon { top: 50%; right: -40px; transform: translateY(-50%); }
+        .robot-icon img{ 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Proyecto IoT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://app.alanestevez.tech/IOT/front-end/monitoreo/index.html">Monitoreo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://app.alanestevez.tech/IOT/front-end/control/control.html">Control</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    
+                    <th>Instruccion</th>
+                    <!-- Añade más encabezados según los campos que deseas mostrar -->
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <!-- Los registros se llenarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Alan David Estevez Baliñas</p>
+        <p>IOT - Ing en sistemas computacionales</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (you can include them from CDN as well) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
